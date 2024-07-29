@@ -59,3 +59,4 @@ Open Discord, Add Discord to the channel and Try with `!hello` or `!ping`.
 - [Discord Developer Portal](https://discord.com/developers/docs)
 - [Railway Documentation](https://docs.railway.app/)
 - [Repository](https://github.com/aeither/discord-python)
+- [Railway Marketplace](https://railway.app/template/x6I4zS)
