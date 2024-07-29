@@ -22,6 +22,10 @@ This project is a simple Discord bot built using the discord.py library. It demo
 pip install poetry
 ```
 
+```bash
+poetry install
+```
+
 ## Develop
 
 To run the bot locally:
@@ -32,7 +36,7 @@ poetry run python bot.py
 
 Make sure to set up your `.env` file with your Discord bot token:
 
-```text
+```bash
 DISCORD_TOKEN=your_token_here
 ```
 
