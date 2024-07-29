@@ -1,4 +1,4 @@
-<img src="" alt="discord" style="width: 250px; height: auto;">
+<img src="https://github.com/user-attachments/assets/7231f0a6-8137-4ab0-9d64-d71200e0ab19" alt="discord" style="width: 250px; height: auto;">
 
 ## 1-Click Deploy
 
@@ -13,9 +13,14 @@ This project is a simple Discord bot built using the discord.py library. It demo
 - Minimal Discord bot application
 - Responds to '!ping' and '!hello' commands
 - Uses discord.py for bot functionality
-- Implements command syncing for slash commands
 - Uses Poetry for dependency management
 - Easy to understand and extend
+
+## Setup
+
+```bash
+pip install poetry
+```
 
 ## Develop
 
@@ -41,6 +46,8 @@ railway up
 
 Remember to set the `DISCORD_TOKEN` environment variable in your Railway project settings.
 
+![DISCORD_TOKEN](https://github.com/user-attachments/assets/eab66d70-ebe5-42fa-b1dd-3859cdbc199a)
+
 ## Test
 
 Open Discord, Add Discord to the channel and Try with `!hello` or `!ping`.
@@ -51,3 +58,4 @@ Open Discord, Add Discord to the channel and Try with `!hello` or `!ping`.
 - [Poetry Documentation](https://python-poetry.org/docs/)
 - [Discord Developer Portal](https://discord.com/developers/docs)
 - [Railway Documentation](https://docs.railway.app/)
+- [Repository](https://github.com/aeither/discord-python)
