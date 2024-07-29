@@ -1,8 +1,8 @@
 <img src="https://github.com/user-attachments/assets/7231f0a6-8137-4ab0-9d64-d71200e0ab19" alt="discord" style="width: 250px; height: auto;">
 
-## 1-Click Deploy
+# Discord Python
 
-Deploy on Railway
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/x6I4zS?referralCode=CODE)
 
 ## Overview
 
