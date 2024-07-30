@@ -42,6 +42,12 @@ DISCORD_TOKEN=your_token_here
 
 ## Deploy
 
+Initialize your project:
+
+```bash
+railway init
+```
+
 To deploy the bot on Railway:
 
 ```bash
