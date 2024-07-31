@@ -29,4 +29,8 @@ async def hello(ctx):
     await ctx.send(f"Hello {ctx.author.name}! 😃")
 
 # Run the bot
-bot.run(os.getenv('DISCORD_TOKEN'))
+if __name__ == "__main__":
+    token = os.getenv('DISCORD_TOKEN')
+    if not token:
+        raise ValueError("No token found. Make sure DISCORD_TOKEN is set in your environment variables.")
+    bot.run(token)
