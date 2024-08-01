@@ -19,12 +19,7 @@ async def on_ready():
     # Set the bot's status
     activity = discord.Game(name="hosting provided by KeenWa Corp. discord.py running.")
     await bot.change_presence(status=discord.Status.online, activity=activity)
-    print(f'{bot.user} has connected to Discord!')
-    try:
-        synced = await bot.tree.sync()
-        print(f"Synced {len(synced)} command(s)")
-    except Exception as e:
-        print(f"Failed to sync commands: {e}")
+    print(f'Bot is ready. Logged in as {bot.user}.')
 
 @bot.event
 async def on_message(message):
@@ -36,8 +31,6 @@ async def on_message(message):
         )
         await thread.send(f"Thread created for {message.author.mention}'s message!")
 
-    # Ensure commands are processed
-    await bot.process_commands(message)
 
 @bot.command()
 async def ping(ctx):
