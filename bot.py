@@ -8,14 +8,13 @@ load_dotenv()
 intents = discord.Intents.default()
 intents.message_content = True
 intents.guilds = True
-intents.threads = True
 bot = commands.Bot(command_prefix='!', intents=intents)
 
 SPECIFIC_CHANNEL_ID = 1268619281483173980
 
 @bot.event
 async def on_ready():
-    activity = discord.Game(name="hosting provided by KeenWa Corp. discord.py running.")
+    activity = discord.Game(name="Coded by rice")
     await bot.change_presence(status=discord.Status.online, activity=activity)
     print(f'{bot.user} has connected to Discord!')
     try:
@@ -32,7 +31,6 @@ async def on_message(message):
                 name=f"Thread for {message.author.name}",
                 auto_archive_duration=1440
             )
-            await thread.send(f"Thread created for {message.author.mention}'s message!")
             print(f"Created thread {thread.name} for message {message.id}")
         except Exception as e:
             print(f"Error creating thread: {e}")
